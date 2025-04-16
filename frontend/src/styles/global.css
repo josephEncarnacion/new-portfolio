@@ -1,0 +1,46 @@
+/* global.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+:root {
+  --primary: #f97316;
+  --bg-light: #ffffff;
+  --text-light: #000000;
+  --bg-dark: #0d1117;
+  --text-dark: #ffffff;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+body[data-theme='light']{
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+}
+body[data-theme='dark'] {
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+  
+  .animate-text {
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

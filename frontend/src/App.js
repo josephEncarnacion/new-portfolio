@@ -1,13 +1,21 @@
 import React from 'react';
+import './styles/global.css';
+import { ThemeProvider } from './context/ThemeContext';
+import Home from './pages/Home';
+import About from './pages/About';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import Content from './components/Content';
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Navbar />
-      <Content />
-    </>
+      <main>
+        <Home />
+        <About />
+      </main>
+      <Footer />
+    </ThemeProvider>
   );
 }
 
