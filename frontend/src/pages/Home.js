@@ -2,7 +2,7 @@ export default function Home() {
     return (
       <section id="home" className="animate-text" style={styles.section}>
         <h1>Welcome to My Portfolio</h1>
-        <p>I’m a Web Developer crafting digital experiences</p>
+        <p>I’m a Web Developer crafting digital experiences lorem Labore esse esse elit occaecat cupidatat duis adipisicing id culpa tempor anim.</p>
       </section>
     );
   }

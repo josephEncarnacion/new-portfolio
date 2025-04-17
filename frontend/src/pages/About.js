@@ -3,8 +3,7 @@ export default function About() {
       <section id="about" style={styles.about}>
         <h2>About Me</h2>
         <p>
-          I’m Joseph Encarnacion, a developer focused on building responsive, aesthetic websites.
-          Passionate about frontend with React and modern design principles.
+          I’m Joseph Encarnacion, a developer . lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </section>
     );

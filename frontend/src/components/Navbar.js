@@ -9,6 +9,7 @@ export default function Navbar() {
       <ul style={styles.links}>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
       <button onClick={toggle} style={styles.button}>
         {darkMode ? '☀️' : '🌙'}
@@ -27,6 +28,7 @@ const styles = {
   logo: {
     fontWeight: 'bold',
     fontSize: '1.5rem',
+    color: '#f97316',
   },
   links: {
     listStyle: 'none',
@@ -38,4 +40,5 @@ const styles = {
     fontSize: '1.2rem',
     cursor: 'pointer',
   }
+
 };
