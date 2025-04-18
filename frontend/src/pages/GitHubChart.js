@@ -20,8 +20,7 @@ export default function GitHubChart() {
         data-aos-offset="200"
         style={{
           ...styles.card,
-          backgroundColor: darkMode ? '#0d1117' : '#ffffff',
-          border: `2px dashed var(--primary)`
+          backgroundColor: darkMode ? '#0d1117' : '#ffffff'
         }}
       >
         <img
@@ -29,7 +28,7 @@ export default function GitHubChart() {
           alt="Joseph Encarnacion GitHub chart"
           style={{
             width: '100%',
-            maxWidth: '1100px', // increase as needed
+            maxWidth: '1300px', // increase as needed
             height: 'auto',
             transform: 'scale(1.1)', // optional zoom effect
             display: 'block',
@@ -56,13 +55,13 @@ const styles = {
   },
   card: {
     padding: '3rem 1rem',
-    maxWidth: '1200px',
+    maxWidth: '1400px',
     margin: '0 auto',
     overflowX: 'auto',
   },
   chart: {
     width: '100%',
-    maxWidth: '1000px',
+    maxWidth: '1200px',
     height: 'auto',
     margin: '0 auto',
   }
