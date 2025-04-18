@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Projects from './pages/Projects';
 import GitHubChart from './pages/GitHubChart';
-
+import Contact from './pages/Contact';
 
 function App() {
   useEffect(() => {
@@ -29,6 +29,7 @@ function App() {
         <About />
         <Projects />
         <GitHubChart />
+        <Contact />
       </main>
       <Footer />
     </ThemeProvider>
