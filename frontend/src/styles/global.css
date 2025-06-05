@@ -30,7 +30,7 @@ body[data-theme='dark'] {
     color: var(--primary);
   }
 
-  // project card styles
+  /* project card styles */
   .animate-text {
     animation: slideIn 2s ease-in-out;
   }
@@ -50,7 +50,7 @@ body[data-theme='dark'] {
     }
   }
   
-  //home page styles
+  /* home page styles */
   @keyframes slideIn {
     from {
       transform: translateY(-40px);

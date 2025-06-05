@@ -2,7 +2,7 @@ services:
   - type: web
     name: portfolio
     env: static
-    buildCommand: cd frontend && npm install && npm install -g @craco/craco && npm run build
+    buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/build
     routes:
       - type: rewrite
@@ -10,6 +10,4 @@ services:
         destination: /index.html
     envVars:
       - key: NODE_VERSION
-        value: 18.17.0
-      - key: GENERATE_SOURCEMAP
-        value: "false" 
+        value: 18.17.0 
