@@ -23,7 +23,7 @@ const projects = [
     title: "Brgy. Nangka Emergency Response System",
     description: "Web app for emergency response management.",
     image: "https://placehold.in/400x300",
-    github: "#",
+    github: "https://github.com/josephEncarnacion/newDispatching.git",
     demo: "#",
   },
   {

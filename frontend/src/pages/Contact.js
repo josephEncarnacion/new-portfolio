@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin  } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
 
@@ -40,6 +40,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: <FaGithub />, url: 'https://github.com/josephEncarnacion' },
     { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/joseph-encarnacion-31a564331' },
+    { icon: <FaFacebook />, url: 'https://www.facebook.com/joseph.encarnacion.956186' },
   ];
 
   return (
@@ -131,3 +132,4 @@ const Contact = () => {
 };
 
 export default Contact;
+  
