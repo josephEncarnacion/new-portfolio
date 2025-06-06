@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profileImage from '../img/profile.png';
+import profileImage from '../img/joseph1.png';
 import './Home.css';
 
 const Home = () => {
