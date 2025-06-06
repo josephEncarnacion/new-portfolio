@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import profileImage from '../img/profile.png';
 import './Home.css';
 
 const Home = () => {
@@ -71,8 +72,8 @@ const Home = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <div className="image-placeholder">
-            {/* Add your image here */}
+          <div className="image-container">
+            <img src={profileImage} alt="Joseph - Full Stack Developer" className="profile-image" />
             <div className="image-overlay" />
           </div>
         </motion.div>
