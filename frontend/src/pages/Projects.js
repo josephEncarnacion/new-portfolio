@@ -4,7 +4,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import hotelReservation from '../img/hotelreservation.png';
-import portfolio from '../img/image.png';
+import portfolio from '../img/image1.png';
+import newDispatching from '../img/image.png';
 
 const projects = [
   {
@@ -24,7 +25,7 @@ const projects = [
   {
     title: "Brgy. Nangka Emergency Response System",
     description: " Full Stack Web app for emergency response management.",
-    image: "https://placehold.in/400x300",
+    image: newDispatching,
     github: "https://github.com/josephEncarnacion/newDispatching.git",
     demo: "#",
   },
