@@ -3,25 +3,27 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import hotelReservation from '../img/hotelreservation.png';
+import portfolio from '../img/image.png';
 
 const projects = [
   {
     title: "Portfolio Website",
     description: "Personal site built with React and dark mode toggle.",
-    image: "https://placehold.in/400x300",
+    image: portfolio,
     github: "#",
     demo: "#",
   },
   {
     title: "Marikina Hotel Convention Reservation System",
-    description: "Web app for hotel and convention reservations.",
-    image: "https://placehold.in/400x300",
+    description: "Full Stack Web app for hotel and convention reservations.",
+    image: hotelReservation,
     github: "#",
     demo: "#",
   },
   {
     title: "Brgy. Nangka Emergency Response System",
-    description: "Web app for emergency response management.",
+    description: " Full Stack Web app for emergency response management.",
     image: "https://placehold.in/400x300",
     github: "https://github.com/josephEncarnacion/newDispatching.git",
     demo: "#",
@@ -56,13 +58,15 @@ export default function Projects() {
             data-aos-duration="800"
             data-aos-once="true"
           >
-            <img
-              src={proj.image}
-              alt={proj.title}
-              style={styles.img}
-              data-aos="zoom-in"
-              data-aos-delay={idx * 150 + 100}
-            />
+            <div style={styles.imageContainer}>
+              <img
+                src={proj.image}
+                alt={proj.title}
+                style={styles.img}
+                data-aos="zoom-in"
+                data-aos-delay={idx * 150 + 100}
+              />
+            </div>
             <h3 data-aos="fade-up" data-aos-delay={idx * 150 + 200}>{proj.title}</h3>
             <p data-aos="fade-up" data-aos-delay={idx * 150 + 250}>{proj.description}</p>
             <div style={styles.links} data-aos="fade-up" data-aos-delay={idx * 150 + 300}>
@@ -94,9 +98,19 @@ const styles = {
     backgroundColor: 'rgba(255,255,255,0.05)',
     transition: 'transform 0.3s ease',
   },
+  imageContainer: {
+    width: '100%',
+    height: '200px',
+    overflow: 'hidden',
+    borderRadius: '8px',
+    marginBottom: '1rem',
+  },
   img: {
     width: '100%',
+    height: '100%',
+    objectFit: 'cover',
     borderRadius: '8px',
+    transition: 'transform 0.3s ease',
   },
   links: {
     marginTop: '1rem',
