@@ -12,29 +12,25 @@ const projects = [
     title: "Portfolio Website",
     description: "Personal site built with React and dark mode toggle.",
     image: portfolio,
-    github: "#",
-    demo: "#",
+    github: "https://github.com/josephEncarnacion/new-portfolio.git"
   },
   {
     title: "Marikina Hotel Convention Reservation System",
     description: "Full Stack Web app for hotel and convention reservations.",
     image: hotelReservation,
-    github: "#",
-    demo: "#",
+    github: "https://github.com/josephEncarnacion/marikina-conventions.git"
   },
   {
     title: "Brgy. Nangka Emergency Response System",
     description: " Full Stack Web app for emergency response management.",
     image: newDispatching,
-    github: "https://github.com/josephEncarnacion/newDispatching.git",
-    demo: "#",
+    github: "https://github.com/josephEncarnacion/newDispatching.git"
   },
   {
     title: "Kronos",
     description: "Web app for time keeping for employee.",
     image: "https://placehold.in/400x300",
-    github: "#",
-    demo: "#",
+    github: "#"
   },
 ];
 
@@ -72,7 +68,6 @@ export default function Projects() {
             <p data-aos="fade-up" data-aos-delay={idx * 150 + 250}>{proj.description}</p>
             <div style={styles.links} data-aos="fade-up" data-aos-delay={idx * 150 + 300}>
               <a href={proj.github} target="_blank" rel="noreferrer">GitHub</a>
-              <a href={proj.demo} target="_blank" rel="noreferrer">Demo</a>
             </div>
           </div>
         ))}
@@ -116,6 +111,6 @@ const styles = {
   links: {
     marginTop: '1rem',
     display: 'flex',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
   },
 };
