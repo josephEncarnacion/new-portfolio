@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import hotelReservation from '../img/hotelreservation.png';
 import hotelReservation1 from '../img/hotelreservation1.png';
-import hotelReservation from '../img/hotelreservation2.png';
+import hotelReservation2 from '../img/hotelreservation2.png';
 import portfolio from '../img/image1.png';
 import newDispatching from '../img/image.png';
 import reservation1 from '../img/dispatching1.png';
