@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import hotelReservation from '../img/hotelreservation.png';
+import hotelReservation1 from '../img/hotelreservation1.png';
+import hotelReservation from '../img/hotelreservation2.png';
 import portfolio from '../img/image1.png';
 import newDispatching from '../img/image.png';
 import reservation1 from '../img/dispatching1.png';
@@ -24,7 +26,7 @@ const projects = [
   {
     title: "Marikina Hotel Convention Reservation System",
     description: "Full Stack Web app for hotel and convention reservations.",
-    image: [hotelReservation],
+    image: [hotelReservation, hotelReservation1, hotelReservation2],
     github: "https://github.com/josephEncarnacion/marikina-conventions.git"
   },
   {

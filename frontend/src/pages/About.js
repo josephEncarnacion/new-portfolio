@@ -27,10 +27,52 @@ const About = () => {
           className="about-header"
         >
           <h2>About Me</h2>
-          <div className="intro-text">
-            <p className="highlight">Hey there! I'm Joseph Encarnacion</p>
-            <p>A passionate full-stack developer who loves turning complex problems into simple, beautiful, and intuitive solutions.</p>
-          </div>
+          <div className="resume-header">
+          <h1>Joseph Encarnacion</h1>
+          <p>Marikina City, Philippines</p>
+          <p>Email: <a href="mailto:JosephEncarnacion62@gmail.com">JosephEncarnacion62@gmail.com</a></p>
+          <p>Phone: 09935654878</p>
+        </div>
+        <hr className="resume-divider" />
+
+        {/* Career Objective */}
+        <div className="resume-section">
+          <h2>CAREER OBJECTIVE</h2>
+          <p>
+            A motivated and detail-oriented Computer Science fresh graduate seeking an entry-level software development role to leverage programming skills, problem-solving abilities, and a passion for technology to contribute to innovative projects.
+          </p>
+        </div>
+        <hr className="resume-divider" />
+
+        {/* Education */}
+        <div className="resume-section">
+          <h2>EDUCATION</h2>
+          <p><strong>Bachelor of Science in Computer Science</strong></p>
+          <p>2020 – 2024 | STI College Marikina</p>
+          <p><strong>Relevant Coursework:</strong></p>
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Management Systems</li>
+            <li>Software Engineering</li>
+            <li>Web Development</li>
+          </ul>
+        </div>
+        <hr className="resume-divider" />
+
+        {/* Work Experience */}
+        <div className="resume-section">
+          <h2>WORK EXPERIENCE</h2>
+          <p><strong>On-the-Job Training (OJT) – Web Development Intern</strong></p>
+          <p>SMARTCARD TECHNIK INC. | Makati City, Philippines</p>
+          <p>April 2024 – June 2024</p>
+          <ul>
+            <li>Developed a functional website as part of a team project, applying front-end and back-end development skills.</li>
+            <li>Gained hands-on experience with RFID systems and their integration with web applications.</li>
+            <li>Participated in testing and debugging processes to ensure responsive and secure features.</li>
+            <li>Learned to work independently with minimal supervision, improving time management and task ownership.</li>
+            <li>Collaborated with senior developers and technical staff to understand real-world project requirements.</li>
+          </ul>
+        </div>
         </motion.div>
 
         <motion.div

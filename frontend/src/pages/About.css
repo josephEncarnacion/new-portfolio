@@ -36,6 +36,56 @@
   background-color: var(--primary);
 }
 
+.resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.resume-header p {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.resume-header a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.resume-divider {
+  border: none;
+  border-top: 2px solid var(--primary);
+  margin: 2rem 0;
+}
+
+.resume-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.resume-section p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.resume-section ul {
+  margin: 0.5rem 0 0 1.5rem;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.resume-section ul li {
+  margin-bottom: 0.5rem;
+}
+.resume-section ul li::marker {
+  color: var(--primary);
+}
+
 body[data-theme='dark'] .about-header h2 {
   color: var(--text-dark);
 }
