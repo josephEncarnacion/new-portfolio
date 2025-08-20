@@ -6,7 +6,8 @@ import 'aos/dist/aos.css';
 import hotelReservation from '../img/hotelreservation.png';
 import hotelReservation1 from '../img/hotelreservation1.png';
 import hotelReservation2 from '../img/hotelreservation2.png';
-import portfolio from '../img/image1.png';
+import codeStreakBudy from '../img/codestreakbudy.png';
+import codeStreakBudy1 from '../img/codestreakbudy1.png';
 import newDispatching from '../img/image.png';
 import reservation1 from '../img/dispatching1.png';
 import reservation2 from '../img/dispatching2.png'; // replace with your real images
@@ -18,9 +19,9 @@ import reservation7 from '../img/dispatching7.png';
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "Personal site built with React and dark mode toggle.",
-    image: [portfolio],
+    title: "Code Streak Budy",
+    description: "A web app that motivates you to code every day with streaks, rewards, and a personal to-do list.",
+    image: [codeStreakBudy , codeStreakBudy1],
     github: "https://github.com/josephEncarnacion/new-portfolio.git"
   },
   {
