@@ -53,13 +53,6 @@ const About = () => {
             <h2>EDUCATION</h2>
             <p><strong>Bachelor of Science in Computer Science</strong></p>
             <p>2020 – 2024 | STI College Marikina</p>
-            <p><strong>Relevant Coursework:</strong></p>
-            <ul>
-              <li>Data Structures and Algorithms</li>
-              <li>Database Management Systems</li>
-              <li>Software Engineering</li>
-              <li>Web Development</li>
-            </ul>
           </div>
 
           {/* Work Experience */}
@@ -70,13 +63,6 @@ const About = () => {
               <p className="location">SMARTCARD TECHNIK INC. | Makati City, Philippines</p>
               <p className="duration">April 2024 – June 2024</p>
             </div>
-            <ul>
-              <li>Developed a functional website as part of a team project, applying front-end and back-end development skills.</li>
-              <li>Gained hands-on experience with RFID systems and their integration with web applications.</li>
-              <li>Participated in testing and debugging processes to ensure responsive and secure features.</li>
-              <li>Learned to work independently with minimal supervision, improving time management and task ownership.</li>
-              <li>Collaborated with senior developers and technical staff to understand real-world project requirements.</li>
-            </ul>
           </div>
         </motion.div>
 

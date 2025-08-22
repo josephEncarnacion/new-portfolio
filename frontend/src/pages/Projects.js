@@ -22,7 +22,7 @@ const projects = [
     title: "Code Streak Budy",
     description: "A web app that motivates you to code every day with streaks, rewards, and a personal to-do list.",
     image: [codeStreakBudy , codeStreakBudy1],
-    github: "https://github.com/josephEncarnacion/new-portfolio.git"
+    github: "https://github.com/josephEncarnacion/CodeStreakBuddy.git"
   },
   {
     title: "Marikina Hotel Convention Reservation System",
