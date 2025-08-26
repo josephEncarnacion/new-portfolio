@@ -226,6 +226,65 @@ body[data-theme='dark'] .intro-text p {
   font-weight: 600;
 }
 
+/* New: info cards grid */
+.info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.info-card {
+  position: relative;
+  background: var(--bg-light);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(var(--primary-rgb), 0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+body[data-theme='dark'] .info-card {
+  background: var(--bg-dark);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Accent bar on top */
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, rgba(var(--primary-rgb), 1), rgba(var(--primary-rgb), 0.6));
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.info-card__content {
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+
+.info-card__content h2 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+}
+
+/* Reuse existing .company-info styles with subtle tweak */
+.info-card .company-info {
+  background: rgba(var(--primary-rgb), 0.06);
+  border-left: 3px solid var(--primary);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+}
+
+/* Tech stack */
 .tech-stack {
   margin: 3rem 0;
 }
@@ -343,6 +402,12 @@ body[data-theme='dark'] .skill-card p {
   color: var(--text-dark);
 }
 
+@media (max-width: 1024px) {
+  .info-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .about-section {
     padding: 3rem 1rem;
@@ -375,5 +440,10 @@ body[data-theme='dark'] .skill-card p {
 
   .resume-header h1 {
     font-size: 2rem;
+  }
+
+  .info-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 } 

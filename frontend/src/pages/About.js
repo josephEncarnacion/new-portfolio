@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaDatabase, FaMicrosoft, FaBriefcase } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaDatabase, FaMicrosoft } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiFirebase, SiJavascript, SiTailwindcss } from 'react-icons/si';
 import './About.css';
 
@@ -40,29 +40,51 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          {/* Career Objective */}
-          <div className="resume-section">
-            <h2>CAREER OBJECTIVE</h2>
-            <p>
-              A motivated and detail-oriented Computer Science fresh graduate seeking an entry-level software development role to leverage programming skills, problem-solving abilities, and a passion for technology to contribute to innovative projects.
-            </p>
-          </div>
+          {/* Info Cards Grid: Career Objective, Education, Work Experience */}
+          <div className="info-cards-grid">
+            <motion.article
+              className="info-card"
+              whileHover={{ y: -6 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <div className="info-card__content">
+                <h2>CAREER OBJECTIVE</h2>
+                <div className="company-info">
+                  <p>
+                    A motivated and detail-oriented Computer Science fresh graduate seeking an entry-level software development role to leverage programming skills, problem-solving abilities, and a passion for technology to contribute to innovative projects.
+                  </p>
+                </div>  
+              </div>
+            </motion.article>
 
-          {/* Education */}
-          <div className="resume-section">
-            <h2>EDUCATION</h2>
-            <p><strong>Bachelor of Science in Computer Science</strong></p>
-            <p>2020 – 2024 | STI College Marikina</p>
-          </div>
+            <motion.article
+              className="info-card"
+              whileHover={{ y: -6 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <div className="info-card__content">
+                <h2>EDUCATION</h2>
+                <div className="company-info">
+                  <p><strong>Bachelor of Science in Computer Science</strong></p>
+                  <p>2021 – 2025 | STI College Marikina</p>
+                </div>
+              </div>
+            </motion.article>
 
-          {/* Work Experience */}
-          <div className="resume-section work-experience">
-            <h2><FaBriefcase style={{ marginRight: '0.5rem' }} />WORK EXPERIENCE</h2>
-            <div className="company-info">
-              <p className="company-name">On-the-Job Training (OJT) – Web Development Intern</p>
-              <p className="location">SMARTCARD TECHNIK INC. | Makati City, Philippines</p>
-              <p className="duration">April 2024 – June 2024</p>
-            </div>
+            <motion.article
+              className="info-card"
+              whileHover={{ y: -6 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <div className="info-card__content">
+                <h2>WORK EXPERIENCE</h2>
+                <div className="company-info">
+                  <p className="company-name">On-the-Job Training (OJT) – Web Development Intern</p>
+                  <p className="location">SMARTCARD TECHNIK INC. | Makati City, Philippines</p>
+                  <p className="duration">April 2024 – June 2024</p>
+                </div>
+              </div>
+            </motion.article>
           </div>
         </motion.div>
 
